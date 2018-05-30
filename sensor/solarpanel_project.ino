@@ -22,8 +22,8 @@ const int pin2 = 13;
 const int pin3 = 14; 
 
 //Setup for ThingSpeak here:
-unsigned long channelNumber = 431337;         //ThingSpeak channel number -- int here
-const char* apiKey = "30J8YYIV60LPXQS6";      // Thingspeak API Key -- string here
+unsigned long channelNumber = ;               //ThingSpeak channel number -- int here
+const char* apiKey = "";                      // Thingspeak API Key -- string here
 const char* host = "api.thingspeak.com";      // API host server 
 
 ////////////////////////////////
@@ -121,7 +121,7 @@ void setup() {
   delay(10);
 
   //add wifi connections here:
-  wifiMulti.addAP("APU-MYDEVICES");     //Connect to this network
+  wifiMulti.addAP("");                  //Connect to this network
   
   ThingSpeak.begin(client);             //Start ThingSpeak client
   connectWiFi();                        //Run connectWifi method
